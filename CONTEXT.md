@@ -17,9 +17,11 @@ Heading numbering follows `一、` for sections, then decimal subsections (`1.1`
 - `abstract.tex` contains the only abstract, in Chinese.
 - `references.tex` contains replaceable example bibliography entries.
 - `appendices.tex` contains replaceable figure, table, and code examples.
-- `logo.png`, `figures/`, and `fonts/` are local runtime assets.
+- `logo.png` and `figures/` are local runtime assets.
 - `latexmkrc` configures the reproducible XeLaTeX build.
 - `.gitignore` excludes generated LaTeX intermediates and the reproducible `main.pdf` output.
+- `fonts/` is excluded from version control because fonts are loaded by name from the system, not bundled.
+- `LICENSE` contains the full GPL-3.0 text.
 
 ## Build contract
 

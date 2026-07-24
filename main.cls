@@ -788,11 +788,11 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
   }
 \else\if@dlmuthesis@customization
   \typeout{This is customization mode. All fonts used are customized.}
-  \setmainfont{Times-New-Roman.ttf}[Path=fonts/, BoldFont=Times-New-Roman.ttf]
-  \setCJKmainfont{SimSun.ttf}[Path=fonts/, BoldFont=SimHei.ttf]
-  \setCJKsansfont{SimHei.ttf}[Path=fonts/, BoldFont=SimHei.ttf]
-  \setCJKmonofont{SimSun.ttf}[Path=fonts/]
-  \newCJKfontfamily\pkukai{KaiTi.ttf}[Path=fonts/]
+  \setmainfont{Times New Roman}[BoldFont=Times New Roman]
+  \setCJKmainfont{SimSun}[BoldFont=SimHei]
+  \setCJKsansfont{SimHei}[BoldFont=SimHei]
+  \setCJKmonofont{SimSun}
+  \newCJKfontfamily\pkukai{KaiTi}
   \providecommand{\songti}{\rmfamily}
   \providecommand{\heiti}{\sffamily}
   \providecommand{\fangsong}{\rmfamily}
@@ -827,7 +827,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \fi
 %% =================================== %
 %% ----- 本科论文封面“本科毕业论文”字样字体 ----- %
-\newCJKfontfamily\titlesong{SimHei.ttf}[Path=fonts/]
+\newCJKfontfamily\titlesong{SimHei}
 %% =================================== %
 % ======================================== %
 

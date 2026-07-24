@@ -11,6 +11,9 @@
 - Add one Chinese abstract and a table of contents following the origin humanities workflow.
 - Add appendices with origin-derived figure, table, and code-block examples.
 - Switch lower-level headings to decimal numbering: `1.1`, `1.1.1`, and `1.1.1.1`.
+- Add origin-base reference link and font-license documentation.
+- Adopt GPL-3.0-or-later as the project license.
+- Load fonts by system font name instead of bundled file paths.
 
 ### Update
 

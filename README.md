@@ -2,6 +2,16 @@
 
 A self-contained, unofficial XeLaTeX template for an undergraduate humanities course paper. The sample document uses neutral Lorem Ipsum text and placeholder metadata so it can be reused without retaining content from a specific paper.
 
+> [!WARNING]
+> **Fonts are not bundled.** The following fonts must be installed on your system before compiling:
+>
+> - **Times New Roman** — for Latin text
+> - **SimSun** (宋体) — for Chinese body text
+> - **SimHei** (黑体) — for Chinese headings and bold
+> - **KaiTi** (楷体) — for the author name on the cover
+>
+> These are proprietary system fonts (Microsoft / ZYEC). They are not redistributable, so they are excluded from this repository. The class loads them by font name; install them via your OS package manager or place them in your system's font directory.
+
 ## Files
 
 - `main.tex`: document metadata, example structure, and sample text
@@ -11,7 +21,7 @@ A self-contained, unofficial XeLaTeX template for an undergraduate humanities co
 - `appendices.tex`: figure, table, and code-block examples
 - `figures/`: local images used by the document examples
 - `logo.png`: cover logo
-- `fonts/`: bundled fonts required by `customization` mode
+- `fonts/`: optional local override for system fonts (not tracked)
 - `latexmkrc`: XeLaTeX build configuration
 
 ## Customize
@@ -42,4 +52,12 @@ The final PDF is written to `main.pdf`.
 
 ## Attribution
 
+**Origin base:** [dlmuthesis LaTeX Thesis Template for Dalian Maritime University](https://www.overleaf.com/latex/templates/dlmuthesis-latex-thesis-template-for-dalian-maritime-university/rmstrjjrthwf)
+
 The class retains the LPPL-licensed DLMU thesis class as its typographic base and adds an unofficial course-paper cover adaptation. The provided origin archive was used to verify the Chinese abstract, table-of-contents, bibliography, appendix, figure, table, and code-block workflows. See the license header in `main.cls`.
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 or later** (`GPL-3.0-or-later`).
+
+The GPL is a copyleft license: derivative works must be distributed under the same license terms, and their source code must be made available.
