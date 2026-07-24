@@ -1,0 +1,48 @@
+% !TeX program = xelatex
+\documentclass[BAhumanities,customization]{main}
+
+% Replace the example metadata below with your own information.
+\coursetitle{课程名称·课程论文}
+\cntitle{论文标题示例：{\rmfamily Lorem Ipsum}}
+\papersubtitle{——副标题示例}
+\aauthor{姓名}
+\stuid{学号}
+\faculty{院系}
+\paperdate{二〇二六}{七}
+
+\usepackage{xurl}
+\urlstyle{same}
+\renewcommand{\ValOfBibname}{参考文献}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\makepages
+\hypersetup{pageanchor=true}
+\pesudohookOFpremainbody[]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\upcite{example-book}
+
+\section{一级标题示例}
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{二级标题示例}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\upcite{example-article}
+
+\subsubsection{三级标题示例}
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{另一一级标题示例}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.\upcite{example-website}
+
+\section*{结语示例}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.
+
+\input{refs}
+\end{document}
