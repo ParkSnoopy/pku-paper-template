@@ -197,9 +197,9 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
   }
 }
 \else\if@dlmuthesis@BAhumanities %【本科-人文社科】
-\renewcommand\thesubsection{\arabic{subsection}} %重设二级标题计数器格式
-\renewcommand\thesubsubsection{\arabic{subsubsection}} %重设三级标题计数器格式
-\renewcommand\theparagraph{\arabic{paragraph}} %重设四级标题计数器格式
+\renewcommand\thesubsection{\thesection.\arabic{subsection}} % 二级标题编号：1.1
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}} % 三级标题编号：1.1.1
+\renewcommand\theparagraph{\thesubsubsection.\arabic{paragraph}} % 四级标题编号：1.1.1.1
 \ctexset{
   contentsname = \hfill{\zihao{3}\hspace{-2em}目\hspace{2em}录}\hfill,
   bibname = \ValOfBibname,
@@ -214,25 +214,27 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
   },
   subsection = {
     format = {\zihao{4}\bfseries},
-    name = {（,）},
-    number = {\chinese{subsection}},
-    aftername = {},
+    name = {,~},
+    number = {\thesubsection},
+    aftername = {~},
     indent = 0pt,
     beforeskip={\dimexpr 0.5ex+\baselineskip-\f@size bp\relax},
     afterskip={\dimexpr 0.5ex+\baselineskip-\f@size bp\relax},
   },
   subsubsection = {
     format = {\zihao{-4}\bfseries},
-    name = {,.~},
-    aftername = {},
+    name = {,~},
+    number = {\thesubsubsection},
+    aftername = {~},
     indent = 0pt,
     beforeskip={\dimexpr 0.5ex+\baselineskip-\f@size bp\relax},
     afterskip={\dimexpr 0.5ex+\baselineskip-\f@size bp\relax},
   },
   paragraph={
     format = {\zihao{-4}\bfseries},
-    name = {（,）},
-    aftername = {},
+    name = {,~},
+    number = {\theparagraph},
+    aftername = {~},
     indent = 0pt,
     beforeskip={0.5ex plus 1ex minus 0.2ex},
     afterskip={0.5ex plus 1ex minus 0.2ex},

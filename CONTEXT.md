@@ -8,6 +8,8 @@ The sample metadata intentionally formats the course name as `《课程名称》
 
 The cover intentionally keeps only the `姓名`, `学号`, and `院系` information rows. Flush-left headings and balanced undergraduate page geometry are also intentional local adaptations and must not be reverted to the origin class defaults.
 
+Heading numbering follows `一、` for sections, then decimal subsections (`1.1`, `1.2`, `2.4`), subsubsections (`1.2.1`, `2.4.2`), and paragraphs (`1.2.1.1`). Parentheses and Chinese numerals are not used for these lower levels.
+
 ## Source layout
 
 - `main.tex` is the user-facing entry point.
