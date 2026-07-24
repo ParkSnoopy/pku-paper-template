@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is a reusable XeLaTeX template for a Peking University undergraduate humanities course paper. It contains only neutral example content and editable placeholder metadata.
+This repository is a reusable, unofficial XeLaTeX template for an undergraduate humanities course paper. It contains only neutral example content and editable placeholder metadata.
 
 The sample metadata intentionally keeps the date in Chinese numerals and includes scoped English title text to demonstrate mixed CJK and Times New Roman typography.
 

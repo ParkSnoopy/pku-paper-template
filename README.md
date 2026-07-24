@@ -1,6 +1,6 @@
-# Peking University Course Paper Template
+# Unofficial Course Paper Template
 
-A self-contained XeLaTeX template for a Peking University undergraduate humanities course paper. The sample document uses neutral Lorem Ipsum text and placeholder metadata so it can be reused without retaining content from a specific paper.
+A self-contained, unofficial XeLaTeX template for an undergraduate humanities course paper. The sample document uses neutral Lorem Ipsum text and placeholder metadata so it can be reused without retaining content from a specific paper.
 
 ## Files
 
@@ -37,4 +37,4 @@ The final PDF is written to `main.pdf`.
 
 ## Attribution
 
-The class retains the LPPL-licensed DLMU thesis class as its typographic base and adds a Peking University course-paper cover adaptation. See the license header in `main.cls`.
+The class retains the LPPL-licensed DLMU thesis class as its typographic base and adds an unofficial course-paper cover adaptation. See the license header in `main.cls`.

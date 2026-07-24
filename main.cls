@@ -15,7 +15,7 @@
 
 % --------------- 全局设置 --------------- %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{main}[2026-07-24 DLMU-based Peking University course paper]
+\ProvidesClass{main}[2026-07-24 DLMU-based unofficial course paper]
 % ======================================== %
 
 
@@ -2513,7 +2513,7 @@ topsep=\parskip
 
 
 
-% ---------- Peking University course-paper adaptation ---------- %
+% ---------- Unofficial course-paper adaptation ---------- %
 % Keep DLMU BAhumanities body typography; replace only BA cover content.
 \makeatletter
 \newcommand{\dlmuthesis@tokens@coursetitle}{~}

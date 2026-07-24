@@ -12,6 +12,7 @@
 - Replace paper-specific content with neutral placeholders and Lorem Ipsum examples.
 - Keep the example date in Chinese numerals.
 - Demonstrate Times New Roman in the English portion of the title.
+- Remove direct university naming and clarify the template's unofficial status.
 
 ### Fix
 
