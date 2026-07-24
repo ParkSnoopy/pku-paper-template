@@ -4,7 +4,7 @@
 
 This repository is a reusable, unofficial XeLaTeX template for an undergraduate humanities course paper. It contains only neutral example content and editable placeholder metadata.
 
-The sample metadata intentionally formats the course name as `《课程名称》课程论文`, keeps the date in Chinese numerals, and includes scoped English title text to demonstrate mixed CJK and Times New Roman typography. The body includes both neutral Chinese copy and Lorem Ipsum examples.
+The sample metadata intentionally formats the course name as `《课程名称》课程论文`, keeps the date in Chinese numerals, and includes scoped English title text to demonstrate mixed CJK and Times New Roman typography. The body includes both neutral Chinese copy and Lorem Ipsum examples, demonstrates three consecutively numbered second-level sections, and starts the references on a dedicated page.
 
 ## Source layout
 
