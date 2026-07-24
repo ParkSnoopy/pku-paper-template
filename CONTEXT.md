@@ -4,21 +4,25 @@
 
 This repository is a reusable, unofficial XeLaTeX template for an undergraduate humanities course paper. It contains only neutral example content and editable placeholder metadata.
 
-The sample metadata intentionally formats the course name as `《课程名称》课程论文`, keeps the date in Chinese numerals, and includes scoped English title text to demonstrate mixed CJK and Times New Roman typography. The body includes both neutral Chinese copy and Lorem Ipsum examples, demonstrates three consecutively numbered second-level sections, and starts the references on a dedicated page.
+The sample metadata intentionally formats the course name as `《课程名称》课程论文`, keeps the date in Chinese numerals, and includes scoped English title text to demonstrate mixed CJK and Times New Roman typography. The document contains one Chinese abstract, a table of contents, neutral Chinese and Lorem Ipsum body examples, three consecutively numbered second-level sections, a dedicated references page, and appendices demonstrating an origin-derived figure, table, and code block.
+
+The cover intentionally keeps only the `姓名`, `学号`, and `院系` information rows. Flush-left headings and balanced undergraduate page geometry are also intentional local adaptations and must not be reverted to the origin class defaults.
 
 ## Source layout
 
 - `main.tex` is the user-facing entry point.
 - `main.cls` owns reusable layout, typography, cover rendering, and citation commands.
-- `refs.tex` contains replaceable example bibliography entries.
-- `logo.png` and `fonts/` are local runtime assets.
+- `abstract.tex` contains the only abstract, in Chinese.
+- `references.tex` contains replaceable example bibliography entries.
+- `appendices.tex` contains replaceable figure, table, and code examples.
+- `logo.png`, `figures/`, and `fonts/` are local runtime assets.
 - `latexmkrc` configures the reproducible XeLaTeX build.
 - `.gitignore` excludes generated LaTeX intermediates and the reproducible `main.pdf` output.
 
 ## Build contract
 
-Run `latexmk main.tex` from the repository root. The document class, bibliography input, logo, and bundled fonts must resolve locally; the template must not depend on removed reference directories or topic-specific source files.
+Run `latexmk main.tex` from the repository root. The document class, abstract, bibliography, appendices, images, logo, and bundled fonts must resolve locally; the template must not depend on the origin archive or extracted review directories.
 
 ## Editing boundaries
 
-Keep paper content and metadata in `main.tex`, bibliography data in `refs.tex`, and reusable formatting in `main.cls`. Preserve the upstream license header when modifying the class.
+Keep paper content and metadata in `main.tex`, abstract content in `abstract.tex`, bibliography data in `references.tex`, appendix examples in `appendices.tex`, and reusable formatting in `main.cls`. Preserve the upstream license header when modifying the class.

@@ -1,0 +1,45 @@
+\begin{appendices}
+
+\section{图表示例}
+
+图\ref{fig:example-chart}沿用原始模板中的插图示例，用于展示图片、图题与交叉引用的基本写法。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.45\textwidth]{example-chart.png}
+  \caption{RGB彩色立方体示意图}
+  \label{fig:example-chart}
+\end{figure}
+
+\section{表格示例}
+
+表\ref{tab:example-table}沿用原始模板的三线表结构，并以中性占位内容展示表题、表头与数据行。
+
+\begin{table}[H]
+  \centering
+  \caption{三线表示例}
+  \begin{tabular}{cccc}
+    \toprule
+    类别 & 项目一 & 项目二 & 合计 \\
+    \midrule
+    示例甲 & 10 & 20 & 30 \\
+    示例乙 & 15 & 25 & 40 \\
+    示例丙 & 20 & 30 & 50 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:example-table}
+\end{table}
+
+\section{代码示例}
+
+以下代码块沿用原始模板附录中的直接插入方式。
+
+\begin{lstlisting}[language=C++]
+int main() {
+    int value = 1;
+    printf("hello latex!\\n");
+    return value - 1;
+}
+\end{lstlisting}
+
+\end{appendices}

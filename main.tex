@@ -18,7 +18,19 @@
 \hypersetup{pageanchor=false}
 \makepages
 \hypersetup{pageanchor=true}
-\pesudohookOFpremainbody[]
+
+% Chinese abstract
+\presetupOFabstractCN
+\input{abstract}
+\nextpages{abstractCN}
+
+% Table of contents
+\presetupOFtocs
+\tableofcontents
+\nextpages{tocs}
+
+% Main body
+\pesudohookOFpremainbody
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\upcite{example-book}
 
@@ -56,5 +68,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero
 
 % Start the references on a new page.
 \clearpage
-\input{refs}
+\input{references}
+
+% Appendices
+\clearpage
+% The origin appendix style restarts Arabic page numbering; disable page anchors
+% here to avoid duplicate PDF page destinations.
+\hypersetup{pageanchor=false}
+\input{appendices}
 \end{document}
