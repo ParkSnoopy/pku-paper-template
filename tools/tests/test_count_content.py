@@ -14,6 +14,17 @@ SPEC.loader.exec_module(count_content)
 
 
 class ContentCounterTests(unittest.TestCase):
+    def test_short_arguments(self):
+        args = count_content.parse_args(
+            ["-m", "paper.tex", "-a", "summary.tex", "-r", "sources.tex", "-A", "extras.tex", "-n"]
+        )
+
+        self.assertEqual(args.main, Path("paper.tex"))
+        self.assertEqual(args.abstract, Path("summary.tex"))
+        self.assertEqual(args.references, Path("sources.tex"))
+        self.assertEqual(args.appendices, Path("extras.tex"))
+        self.assertTrue(args.dry_run)
+
     def test_strips_latex_syntax_but_keeps_visible_text(self):
         source = r"""
         % hidden comment

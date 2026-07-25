@@ -277,23 +277,24 @@ def load_section(path: Path) -> str:
     return expand_inputs(source, path.parent, (path.resolve(),))
 
 
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Count Chinese Han characters, English letters, and Unicode punctuation "
             "in abstract, body, references, and appendices while removing LaTeX syntax."
         )
     )
-    parser.add_argument("--main", type=Path, default=Path("main.tex"))
-    parser.add_argument("--abstract", type=Path, default=Path("abstract.tex"))
-    parser.add_argument("--references", type=Path, default=Path("references.tex"))
-    parser.add_argument("--appendices", type=Path, default=Path("appendices.tex"))
+    parser.add_argument("-m", "--main", type=Path, default=Path("main.tex"))
+    parser.add_argument("-a", "--abstract", type=Path, default=Path("abstract.tex"))
+    parser.add_argument("-r", "--references", type=Path, default=Path("references.tex"))
+    parser.add_argument("-A", "--appendices", type=Path, default=Path("appendices.tex"))
     parser.add_argument(
+        "-n",
         "--dry-run",
         action="store_true",
         help="show selected files and body boundaries without reading/counting content",
     )
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
 def main() -> int:

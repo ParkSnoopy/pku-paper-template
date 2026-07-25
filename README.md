@@ -70,7 +70,7 @@ Preview selected files and boundaries without reading content:
 python3 tools/count_content.py --dry-run
 ```
 
-Use `--main`, `--abstract`, `--references`, or `--appendices` to override default paths.
+Override default paths with `-m`/`--main`, `-a`/`--abstract`, `-r`/`--references`, and `-A`/`--appendices`. Use `-n` as the short form of `--dry-run`.
 
 ## Attribution
 

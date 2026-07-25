@@ -6,6 +6,7 @@
 
 - Add a dependency-free script under `tools/` that counts Chinese, English, and punctuation characters across the abstract, body, references, and appendices while excluding LaTeX syntax.
 - Add focused tests under `tools/tests/` for syntax removal, body extraction, recursive inputs, environment arguments, verbatim content, and character classification.
+- Add short command-line aliases for every content-counter option.
 
 ## 2026-07-24
 
