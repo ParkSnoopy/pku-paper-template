@@ -19,6 +19,8 @@ A self-contained, unofficial XeLaTeX template for an undergraduate humanities co
 - `abstract.tex`: the single Chinese abstract and keywords
 - `references.tex`: example bibliography entries
 - `appendices.tex`: figure, table, and code-block examples
+- `tools/count_content.py`: content-only character counter
+- `tools/tests/`: standard-library tests for the character counter
 - `figures/`: local images used by the document examples
 - `logo.png`: cover logo
 - `fonts/`: optional local override for system fonts (not tracked)
@@ -49,6 +51,26 @@ latexmk -c
 ```
 
 The final PDF is written to `main.pdf`.
+
+## Count content characters
+
+Run:
+
+```sh
+python3 tools/count_content.py
+```
+
+The script reports separate and combined counts for the abstract, body, references, and appendices. The body is the part of `main.tex` between `\pesudohookOFpremainbody` and `\input{references}`; nested `\input` and `\include` files within that range are expanded recursively.
+
+The total includes Chinese Han characters, ASCII English letters, and Unicode punctuation. It excludes whitespace, digits, emoji, comments, math, LaTeX commands, citation and reference keys, labels, environment options, and layout arguments. Visible headings, captions, keywords, URLs, inline verbatim text, and code listings remain content and are counted.
+
+Preview selected files and boundaries without reading content:
+
+```sh
+python3 tools/count_content.py --dry-run
+```
+
+Use `--main`, `--abstract`, `--references`, or `--appendices` to override default paths.
 
 ## Attribution
 

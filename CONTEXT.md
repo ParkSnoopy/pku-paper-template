@@ -17,6 +17,8 @@ Heading numbering follows `一、` for sections, then decimal subsections (`1.1`
 - `abstract.tex` contains the only abstract, in Chinese.
 - `references.tex` contains replaceable example bibliography entries.
 - `appendices.tex` contains replaceable figure, table, and code examples.
+- `tools/count_content.py` means the repository's content-length counter: it counts Chinese Han characters, ASCII English letters, and Unicode punctuation in the abstract, body, references, and appendices after removing non-content LaTeX syntax.
+- `tools/tests/` contains standard-library regression tests for content extraction and counting.
 - `logo.png` and `figures/` are local runtime assets.
 - `latexmkrc` configures the reproducible XeLaTeX build.
 - `.gitignore` excludes generated LaTeX intermediates and the reproducible `main.pdf` output.
@@ -30,3 +32,5 @@ Run `latexmk main.tex` from the repository root. The document class, abstract, b
 ## Editing boundaries
 
 Keep paper content and metadata in `main.tex`, abstract content in `abstract.tex`, bibliography data in `references.tex`, appendix examples in `appendices.tex`, and reusable formatting in `main.cls`. Preserve the upstream license header when modifying the class.
+
+“Content length” excludes whitespace, digits, emoji, comments, math, commands, citation/reference keys, labels, and layout arguments. Visible titles, headings, captions, keywords, URLs, inline verbatim text, and code listings remain content. The body boundary starts after `\pesudohookOFpremainbody` and ends before `\input{references}`; nested body inputs are content.
