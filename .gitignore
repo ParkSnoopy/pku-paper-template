@@ -33,7 +33,7 @@
 _minted-*
 
 # Reproducible document output
-/main.pdf
+**/*.pdf
 
 # Fonts are loaded by name from the system; the directory is not tracked.
 fonts/

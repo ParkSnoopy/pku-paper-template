@@ -1,16 +1,6 @@
-# Unofficial Course Paper Template
+# Paper Template
 
 A self-contained, unofficial XeLaTeX template for an undergraduate humanities course paper. The sample document uses neutral Lorem Ipsum text and placeholder metadata so it can be reused without retaining content from a specific paper.
-
-> [!WARNING]
-> **Fonts are not bundled.** The following fonts must be installed on your system before compiling:
->
-> - **Times New Roman** — for Latin text
-> - **SimSun** (宋体) — for Chinese body text
-> - **SimHei** (黑体) — for Chinese headings and bold
-> - **KaiTi** (楷体) — for the author name on the cover
->
-> These are proprietary system fonts (Microsoft / ZYEC). They are not redistributable, so they are excluded from this repository. The class loads them by font name; install them via your OS package manager or place them in your system's font directory.
 
 ## Files
 
