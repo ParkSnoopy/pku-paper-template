@@ -6,8 +6,8 @@ Reusable, unofficial XeLaTeX course-paper templates. Each template keeps neutral
 
 | Template | Use case | Key features |
 |----------|----------|--------------|
-| `templates/dlmuthesis` | Undergraduate humanities course paper (DLMU-derived) | Chinese abstract, TOC, bibliography, appendices, cover page |
-| `templates/zhuangzizhexue` | Philosophy course paper | Footnote-only citations, circled per-page footnotes, compact title block |
+| [`templates/dlmuthesis`](templates/dlmuthesis/README.md) | Undergraduate humanities course paper (DLMU-derived) | Chinese abstract, TOC, bibliography, appendices, cover page |
+| [`templates/zhuangzizhexue`](templates/zhuangzizhexue/README.md) | Philosophy course paper | Footnote-only citations, circled per-page footnotes, compact title block |
 
 ## Quick start
 
