@@ -1,17 +1,12 @@
 # Changelog
 
-## 2026-07-26
+## 2026
 
 ### Add
 
 - Add a dependency-free script under `tools/` that counts Chinese, English, and punctuation characters across the abstract, body, references, and appendices while excluding LaTeX syntax.
 - Add focused tests under `tools/tests/` for syntax removal, body extraction, recursive inputs, environment arguments, verbatim content, and character classification.
 - Add short command-line aliases for every content-counter option.
-
-## 2026-07-24
-
-### Add
-
 - Add template usage and project-structure documentation.
 - Add LaTeX build-artifact ignore rules.
 - Add a neutral Chinese body-text example.
@@ -25,6 +20,7 @@
 
 ### Update
 
+- Remove day-level dates from project history and class metadata while retaining exact dates required for dependency-version checks.
 - Replace paper-specific content with neutral placeholders and Lorem Ipsum examples.
 - Keep the example date in Chinese numerals.
 - Demonstrate Times New Roman in the English portion of the title.

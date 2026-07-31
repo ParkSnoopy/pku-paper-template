@@ -33,6 +33,8 @@ Run `latexmk main.tex` from the repository root. The document class, abstract, b
 
 Keep paper content and metadata in `main.tex`, abstract content in `abstract.tex`, bibliography data in `references.tex`, appendix examples in `appendices.tex`, and reusable formatting in `main.cls`. Preserve the upstream license header when modifying the class.
 
+Use no more than year precision for project history and class metadata. Keep exact dates only where technically required, such as dependency-version checks.
+
 “Content length” excludes whitespace, digits, emoji, comments, math, commands, citation/reference keys, labels, and layout arguments. Visible titles, headings, captions, keywords, URLs, inline verbatim text, and code listings remain content. The body boundary starts after `\pesudohookOFpremainbody` and ends before `\input{references}`; nested body inputs are content.
 
 Counter path overrides use `-m`/`--main`, `-a`/`--abstract`, `-r`/`--references`, and `-A`/`--appendices`; dry-run uses `-n`/`--dry-run`.

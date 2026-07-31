@@ -23,7 +23,6 @@ A self-contained, unofficial XeLaTeX template for an undergraduate humanities co
 - `tools/tests/`: standard-library tests for the character counter
 - `figures/`: local images used by the document examples
 - `logo.png`: cover logo
-- `fonts/`: optional local override for system fonts (not tracked)
 - `latexmkrc`: XeLaTeX build configuration
 
 ## Customize

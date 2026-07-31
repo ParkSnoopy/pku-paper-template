@@ -15,7 +15,7 @@
 
 % --------------- 全局设置 --------------- %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{main}[2026-07-24 DLMU-based unofficial course paper]
+\ProvidesClass{main}
 % ======================================== %
 
 
